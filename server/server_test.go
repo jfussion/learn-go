@@ -71,7 +71,7 @@ func TestGETPlayers(t *testing.T) {
 func TestStoreWins(t *testing.T) {
 	store := StubPlayerStore{
 		map[string]int{},
-		[]string{},
+		nil,
 	}
 	server := &PlayerServer{&store}
 
